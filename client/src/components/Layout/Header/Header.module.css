@@ -1,0 +1,20 @@
+
+#header{
+    color: darkgreen;
+}
+.headerlogo h3{
+margin-top:130px;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+@media all and (max-width: 720px) {
+    .accountIcon {
+      display: none;
+    }
+  }

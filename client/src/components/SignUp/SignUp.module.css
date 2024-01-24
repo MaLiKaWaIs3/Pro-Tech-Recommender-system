@@ -1,0 +1,191 @@
+#signUpBody,
+.forgetpassword {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    background: linear-gradient(to top, #fff, rgb(72, 121, 140));
+
+}
+
+#upform h2 {
+    color: black;
+    text-align: center;
+    padding-top: 20px !important;
+}
+
+#upform {
+    width: 500px;
+
+}
+
+#signUpform {
+    width: 100%;
+    box-shadow: 5px 5px 10px rgb(192, 189, 189);
+    background-color: rgba(233, 242, 242, 0.9);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #2e80bf, rgba(25, 26, 25, 0.8));
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+input[type=number],
+select {
+    border: none !important;
+    border-bottom: 1px solid silver !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    width: 90% !important;
+}
+
+label {
+    color: white !important;
+}
+
+input[type=checkbox] {
+    border: 1px black solid !important;
+    border-radius: 3px !important;
+}
+
+#signUpBtn {
+    padding: 10px 60px;
+    color: white;
+    background-color: rgb(39, 38, 38);
+    border-radius: 25px;
+    border: 0;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#signUpBtn:hover {
+    transition: all .1s ease-in-out;
+    transform: scale(1.1)
+}
+
+.textcenter {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+@media screen and (max-width:1000px) {
+    #signUpBody {
+
+        grid-template-columns: 0% 100%;
+    }
+
+    #signUpBtn {
+        padding: 10px 50px;
+
+    }
+}
+
+
+.OTP {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    height: 100vh;
+    padding: 30px;
+}
+
+.otpform {
+    display: flex;
+    max-width: 350px;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(99, 102, 107, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.input_field_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_field_box input {
+    border: none;
+    max-width: 15%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f0f0f0;
+    font-size: 25px;
+}
+
+.input_field_box input:focus {
+    outline: 1.5px solid #00b991;
+    outline-offset: 2px;
+}
+
+.otpform .otpbtn {
+    margin-top: 25px;
+    width: 92%;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #7f827d;
+    transition: all 0.2s ease;
+}
+
+.otpform .otpbtn.active {
+    background: #ffcc00;
+    pointer-events: auto;
+    color: #000000;
+}
+
+.otpbtn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 203, 0);
+    color: black;
+}
+
+.input_field_box input::-webkit-inner-spin-button,
+.input_field_box input::-webkit-inner-outer-button {
+    display: none;
+}
+
+
+.passwordtoggleicon {
+    position: absolute;
+    top: 85%;
+    right: 45px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.passwordtoggleicon i {
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.passwordtoggleicon i:hover {
+    color: #000;
+}
